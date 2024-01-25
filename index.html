@@ -37,25 +37,30 @@
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header id="header" class="d-flex flex-column justify-content-center h-100">
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li class="d-none"><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        <li class="d-none"><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+            <span>Portfolio</span></a>
         </li>
         <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li class="mt-5 d-inline-block d-lg-none w-100"><a href="https://users.harmonysheets.com/login"
+            class="login-button btn btn-primary"><i class='bx bx-log-in'></i> <span>Login</span></a></li>
       </ul>
+
     </nav><!-- .nav-menu -->
 
   </header><!-- End Header -->
-  
+
   <!-- ======= Hero Section ======= -->
-  <header id="login-header">
+  <header id="login-header" class="d-none d-lg-inline-block">
     <!-- Add your navigation menu or other header content here -->
-    <a href="https://users.harmonysheets.com/login" class="login-button btn btn-primary">Login</a>
+    <a href="https://users.harmonysheets.com/login" class="login-button btn btn-primary"><i class='bx bx-log-in'></i>
+      <span>Login</span></a>
   </header>
 
   <section id="hero" class="d-flex flex-column justify-content-center">
@@ -106,6 +111,9 @@
               </div>
             </div>
           </div>
+
+        </div>
+        <div class="row mt-3">
           <div class="col-lg-12 pt-4 pt-lg-0 content">
             <h3>Why Choose Us:</h3>
             <p>Embark on a partnership that transcends conventional software development. Here's why choosing us is
@@ -379,7 +387,7 @@
     </section><!-- End Portfolio Section -->
     <script>
       document.addEventListener('DOMContentLoaded', removeStuffNotReady);
-      function removeStuffNotReady(){
+      function removeStuffNotReady() {
         document.getElementById('portfolio').remove()
       }
     </script>
@@ -390,7 +398,10 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>At Harmony Sheets, we offer a comprehensive range of services designed to bring your digital vision to life. Our dedicated team specializes in crafting custom software solutions tailored to your unique needs. From the initial stages of conceptualization to the final execution, we pride ourselves on delivering excellence in every aspect of software development.</p>
+          <p>At Harmony Sheets, we offer a comprehensive range of services designed to bring your digital vision to
+            life. Our dedicated team specializes in crafting custom software solutions tailored to your unique needs.
+            From the initial stages of conceptualization to the final execution, we pride ourselves on delivering
+            excellence in every aspect of software development.</p>
         </div>
 
         <div class="row">
@@ -406,7 +417,8 @@
                 <i class='fas fa-code'></i>
               </div>
               <h4><a href="">Custom Software Development</a></h4>
-              <p>We transform your ideas into robust and scalable software applications, ensuring they meet the highest standards of functionality and performance.</p>
+              <p>We transform your ideas into robust and scalable software applications, ensuring they meet the highest
+                standards of functionality and performance.</p>
             </div>
           </div>
 
@@ -422,7 +434,8 @@
                 <i class='fas fa-globe'></i>
               </div>
               <h4><a href="">Website Development</a></h4>
-              <p>Whether you need a sleek and modern website or a complex web application, our team has the expertise to create a digital presence that aligns seamlessly with your goals.</p>
+              <p>Whether you need a sleek and modern website or a complex web application, our team has the expertise to
+                create a digital presence that aligns seamlessly with your goals.</p>
             </div>
           </div>
 
@@ -438,7 +451,8 @@
                 <i class='fas fa-cogs'></i>
               </div>
               <h4><a href="">Task Automation</a></h4>
-              <p>Streamline your workflows and enhance efficiency with our task automation solutions, designed to optimize processes and save valuable time.</p>
+              <p>Streamline your workflows and enhance efficiency with our task automation solutions, designed to
+                optimize processes and save valuable time.</p>
             </div>
           </div>
 
@@ -453,7 +467,8 @@
                 <i class='fas fa-database'></i>
               </div>
               <h4><a href="">Data Management Software</a></h4>
-              <p>Harness the power of data with our sophisticated data management solutions, ensuring secure, organized, and accessible information for informed decision-making.</p>
+              <p>Harness the power of data with our sophisticated data management solutions, ensuring secure, organized,
+                and accessible information for informed decision-making.</p>
             </div>
           </div>
 
@@ -468,7 +483,8 @@
                 <i class='fas fa-comment'></i>
               </div>
               <h4><a href="">Custom SMS Applications</a></h4>
-              <p>Engage with your audience through personalized SMS applications, providing an effective and direct communication channel.</p>
+              <p>Engage with your audience through personalized SMS applications, providing an effective and direct
+                communication channel.</p>
             </div>
           </div>
 
@@ -483,7 +499,8 @@
                 <i class='fas fa-lightbulb'></i>
               </div>
               <h4><a href="">Dream Idea Realization</a></h4>
-              <p>Have a unique concept? We specialize in turning dream ideas into tangible digital realities, pushing the boundaries of innovation.</p>
+              <p>Have a unique concept? We specialize in turning dream ideas into tangible digital realities, pushing
+                the boundaries of innovation.</p>
             </div>
           </div>
 
@@ -510,7 +527,10 @@
                 <!-- <h4>Ceo &amp; Founder</h4> -->
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Working with Harmony Sheets was a game-changer for our business. Their team's dedication to quality and innovation truly sets them apart. The custom software solution they developed exceeded our expectations and significantly improved our efficiency. We highly recommend Harmony Sheets for anyone seeking top-notch software development services.
+                  Working with Harmony Sheets was a game-changer for our business. Their team's dedication to quality
+                  and innovation truly sets them apart. The custom software solution they developed exceeded our
+                  expectations and significantly improved our efficiency. We highly recommend Harmony Sheets for anyone
+                  seeking top-notch software development services.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -523,7 +543,10 @@
                 <!-- <h4>Designer</h4> -->
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  We are incredibly grateful for the outstanding website development services provided by Harmony Sheets. The team's attention to detail and commitment to delivering a user-friendly and visually stunning website were evident throughout the entire process. Thanks to Harmony Sheets, our online presence has been transformed, and we've received numerous compliments from our users.
+                  We are incredibly grateful for the outstanding website development services provided by Harmony
+                  Sheets. The team's attention to detail and commitment to delivering a user-friendly and visually
+                  stunning website were evident throughout the entire process. Thanks to Harmony Sheets, our online
+                  presence has been transformed, and we've received numerous compliments from our users.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -536,7 +559,10 @@
                 <!-- <h4>Store Owner</h4> -->
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  The task automation solutions implemented by Harmony Sheets have been a game-changer for our organization. What used to take hours now happens with just a click, allowing our team to focus on more strategic tasks. The expertise and professionalism of Harmony Sheets have made a significant impact on our operational efficiency.
+                  The task automation solutions implemented by Harmony Sheets have been a game-changer for our
+                  organization. What used to take hours now happens with just a click, allowing our team to focus on
+                  more strategic tasks. The expertise and professionalism of Harmony Sheets have made a significant
+                  impact on our operational efficiency.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -549,7 +575,10 @@
                 <!-- <h4>Freelancer</h4> -->
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Choosing Harmony Sheets for our data management needs was one of the best decisions we made. Their team demonstrated a deep understanding of our requirements and delivered a solution that streamlined our data processes. The result? Improved accuracy, faster decision-making, and a more organized workflow. Thank you, Harmony Sheets, for your exceptional service.
+                  Choosing Harmony Sheets for our data management needs was one of the best decisions we made. Their
+                  team demonstrated a deep understanding of our requirements and delivered a solution that streamlined
+                  our data processes. The result? Improved accuracy, faster decision-making, and a more organized
+                  workflow. Thank you, Harmony Sheets, for your exceptional service.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -562,7 +591,10 @@
                 <!-- <h4>Entrepreneur</h4> -->
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  We were in need of a custom SMS application to enhance our communication strategy, and Harmony Sheets delivered beyond our expectations. The app they developed is user-friendly, reliable, and has significantly improved our ability to connect with our audience. Harmony Sheets is our go-to partner for all things software-related.
+                  We were in need of a custom SMS application to enhance our communication strategy, and Harmony Sheets
+                  delivered beyond our expectations. The app they developed is user-friendly, reliable, and has
+                  significantly improved our ability to connect with our audience. Harmony Sheets is our go-to partner
+                  for all things software-related.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -596,7 +628,8 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p><a class="text-dark" href="mailto:harmonysheets@gmail.com" target="_blank">harmonysheets@gmail.com</a></p>
+                <p><a class="text-dark" href="mailto:harmonysheets@gmail.com"
+                    target="_blank">harmonysheets@gmail.com</a></p>
               </div>
 
               <div class="phone">
@@ -616,8 +649,7 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="" method="post" role="form" class="php-email-form">
+            <form role="form" id="contact-form" onsubmit="submitContactForm(event)">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -630,15 +662,62 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"
+                  required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit" disabled>Send Message (coming soon!)</button></div>
+              <div class="my-3" id="submit-message"></div>
+              <div class="text-center"><button type="submit" id="submitForm">Send Message</button></div>
             </form>
+            <script>
+              function submitContactForm(event) {
+                event.preventDefault();
+
+                document.getElementById('submitForm').innerHTML = `<span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                  <span role="status">Sending...</span>`;
+                  document.getElementById('submitForm').disabled = true;
+
+                // source: https://formsubmit.co/
+                fetch("https://formsubmit.co/ajax/harmonysheets@gmail.com", {
+                  method: "POST",
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    Name: document.getElementById('name').value,
+                    Message: document.getElementById('message').value,
+                    Subject: document.getElementById('subject').value,
+                    Email: document.getElementById('email').value
+                  })
+                })
+                  .then(response => response.json())
+                  .then(data => {
+                    console.log(data)
+                    document.getElementById('submit-message').innerHTML = `<div class="alert alert-success" role="alert">
+                      Form submitted! Thanks for reaching out, we will get back to you soon Iy"h!
+                    </div>`;
+                    setTimeout(function() {
+                      document.getElementById('submit-message').innerHTML = '';
+                    }, 5000);
+                    
+                    document.getElementById('contact-form').reset();
+                    document.getElementById('submitForm').innerHTML = 'Send Message';
+                  document.getElementById('submitForm').disabled = false;
+                  })
+                  .catch(error => {
+                    console.log(error)
+                    document.getElementById('submit-message').innerHTML = `<div class="alert alert-danger" role="alert">
+                      Form not submitted! Please try again!
+                    </div>`;
+                    setTimeout(function() {
+                      document.getElementById('submit-message').innerHTML = '';
+                    }, 5000);
+                    
+                    document.getElementById('submitForm').innerHTML = 'Send Message';
+                  document.getElementById('submitForm').disabled = false;
+                  });
+              }
+            </script>
 
           </div>
 
@@ -676,7 +755,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
