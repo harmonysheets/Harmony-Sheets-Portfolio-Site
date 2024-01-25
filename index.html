@@ -674,8 +674,29 @@
 
                 document.getElementById('submitForm').innerHTML = `<span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                   <span role="status">Sending...</span>`;
-                  document.getElementById('submitForm').disabled = true;
+                document.getElementById('submitForm').disabled = true;
+                const newYorkTime = new Date().toLocaleString('en-US', {
+                  timeZone: 'America/New_York',
+                  weekday: 'short',
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
+                  hour: 'numeric',
+                  minute: 'numeric',
+                  hour12: true,
+                });
 
+                // Get the current time in Israel timezone
+                const israelTime = new Date().toLocaleString('en-US', {
+                  timeZone: 'Asia/Jerusalem',
+                  weekday: 'short',
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
+                  hour: 'numeric',
+                  minute: 'numeric',
+                  hour12: true,
+                });
                 // source: https://formsubmit.co/
                 fetch("https://formsubmit.co/ajax/d6d0d0499d3a9cfc0d6c07ca1968a95a", {
                   method: "POST",
@@ -687,7 +708,9 @@
                     Name: document.getElementById('name').value,
                     Subject: document.getElementById('subject').value,
                     Message: document.getElementById('message').value,
-                    Email: document.getElementById('email').value
+                    Email: document.getElementById('email').value,
+                    'New York Timestamp': newYorkTime,
+                    'Israel Timestamp': israelTime
                   })
                 })
                   .then(response => response.json())
@@ -696,25 +719,25 @@
                     document.getElementById('submit-message').innerHTML = `<div class="alert alert-success" role="alert">
                       Form submitted! Thanks for reaching out, we will get back to you soon Iy"h!
                     </div>`;
-                    setTimeout(function() {
+                    setTimeout(function () {
                       document.getElementById('submit-message').innerHTML = '';
                     }, 5000);
-                    
+
                     document.getElementById('contact-form').reset();
                     document.getElementById('submitForm').innerHTML = 'Send Message';
-                  document.getElementById('submitForm').disabled = false;
+                    document.getElementById('submitForm').disabled = false;
                   })
                   .catch(error => {
                     console.log(error)
                     document.getElementById('submit-message').innerHTML = `<div class="alert alert-danger" role="alert">
                       Form not submitted! Please try again!
                     </div>`;
-                    setTimeout(function() {
+                    setTimeout(function () {
                       document.getElementById('submit-message').innerHTML = '';
                     }, 5000);
-                    
+
                     document.getElementById('submitForm').innerHTML = 'Send Message';
-                  document.getElementById('submitForm').disabled = false;
+                    document.getElementById('submitForm').disabled = false;
                   });
               }
             </script>
